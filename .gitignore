@@ -1,0 +1,29 @@
+# Secretos
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+
+# Node
+node_modules/
+dist/
+coverage/
+
+# Datos y audios (RD-04): nunca al repositorio
+datos
+*.mp3
+*.wav
+*.m4a
+*.ogg
+*.flac
+
+# design-sync
+.ds-sync/
+ds-bundle/
+.design-sync/.cache/
+.design-sync/learnings/
+.design-sync/node_modules
