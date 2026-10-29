@@ -246,7 +246,6 @@ Trabajo fuera del MVP actual:
 - Análisis interseccional
 - Análisis en directo
 - Comparar episodios y exportar resultados (JSON y CSV)
-- Servidor MCP público
 
 ---
 
