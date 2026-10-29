@@ -202,45 +202,6 @@ Los ejemplos de la demo (`backend/ejemplos/`) son resultados del sistema sobre l
 e IB4010 del [corpus AMI](https://groups.inf.ed.ac.uk/ami/corpus/) (CC BY 4.0): resultados derivados,
 sin audio.
 
----
-
-## Dependencias principales y sus licencias
-
-La tabla completa y verificada se obtiene ejecutando:
-
-```bash
-scripts/listar_licencias.sh
-```
-
-Las dependencias declaradas en [`backend/pyproject.toml`](backend/pyproject.toml) son:
-
-| Paquete | Versión | Grupo | Licencia |
-|---|---|---|---|
-| pydantic | ≥2.14.1 | base | pendiente (ejecutar `listar_licencias.sh`) |
-| pyannote.audio | ≥4.0 | audio | pendiente |
-| inaSpeechSegmenter | ≥0.8 | audio | pendiente |
-| torch | ==2.11.0 | audio | pendiente |
-| torchaudio | ==2.11.0 | audio | pendiente |
-| pyannote-metrics | ≥4.2.0 | evaluacion | pendiente |
-| pytest | ≥8.0 | dev | pendiente |
-| ruff | ≥0.6 | dev | pendiente |
-| bandit | ≥1.9.4 | dev | pendiente |
-| pip-audit | ≥2.10.1 | dev | pendiente |
-| pip-licenses | ≥5.5.5 | dev | pendiente |
-
-El modelo de diarización de pyannote se distribuye bajo licencia **CC-BY-4.0**.
-
-La versión de PyTorch está fijada a 2.11.0 porque la GPU V100S (capacidad 7.0) no es
-compatible con versiones posteriores debido a su cuDNN.
-
-**Software de terceros no abierto: las librerías CUDA de NVIDIA.** PyTorch, TensorFlow e
-inaSpeechSegmenter instalan las librerías CUDA de NVIDIA (`nvidia-*-cu12` y `cuda-toolkit`), que
-son gratuitas pero tienen licencia privativa de NVIDIA. Solo sirven para usar la GPU que cede
-OVHcloud, y por eso entran en la excepción de la regla 4 de la constitución (decisión D-22 del
-funcional). `listar_licencias.sh` las marca como «permitida (D-22)»; cualquier otra licencia
-cerrada lo hace fallar. El código del proyecto sigue bajo licencia MIT.
-
----
 
 ## Ética y uso responsable
 
